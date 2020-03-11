@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage[spanish]{babel}
+\title{Método Simplex}
+\author{Yo Merengues}
+\date{2020/03/11}
+\setlength{\parindent}{0cm}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{¿Qué es el método Simplex?}
+Es un conjunto de métodos muy7 usados para resolver problemas de
+programación lineal, en los cuales de alguna manera se busca el máximo
+de una función lineal sobre un conjunto de variables que satisfaga un
+conjunto de inecauaciones lineales.Fue creado por George Dantzig en 1947.
+\section{Recomendaciones inciales}
+\begin{itemize}
+  \item Conviene escribir con $x_i$ con $i=1,2,...,n.$ $i\in N$ variables.
+  \end{itemize}
+  \subsection{Forma Estándar}
+  \begin{equation*}
+    \begin{aligned}
+      \text{Maximizar} \quad & c^Tx\\
+      \text{sujeto a} \quad &
+      \begin{aligned}
+      Ax &\leq b \\
+      x_1,x_2,\ldots,x_n &\geq 0\\
+    \end{aligned}
+  \end{aligned}
+\end{equation*}
+Con $C^T$ Un Vector columna traspuesto, $\vec{x}=(x_1,x_2,\ldots,x_n)$
+el vector de variables, $A$ una Matriz de mxn, y $b$ un vector columna
+de mx1.
+  \subsection{Forma Simplex}
+  \begin{equation*}
+    \begin{aligned}
+      \text{Maximizar} \quad & c^Tx\\
+      \text{sujeto a} \quad &
+      \begin{aligned}
+      Ax &=b \\
+      x_1,x_2,\ldots,x_n &\geq 0\\
+    \end{aligned}
+  \end{aligned}
+\end{equation*}
+Con $C^T$ Un Vector columna traspuesto, $\vec{x}=(x_1,x_2,\ldots,x_n)$
+el vector de variables, $A$ una Matriz de mxn, y $b$ un vector columna
+de mx1.
+\section{Método (Explicado con un ejemplo)}
+  \subsection{Ejemplo:}
+    \begin{equation*}
+   \begin{aligned}
+   \text{Maximizar} \quad & 3x+4y\\
+   \text{sujeto a} \quad &
+     \begin{aligned}
+      x,y &\geq  0\\
+      -x+y &\geq 2\\
+     2x+y &\leq 4
+     \end{aligned}
+   \end{aligned}
+ \end{equation*}
+ \subsection{Primer Paso}
+ \textbf{1.-} Pasar a su forma Estándar:
+
+ Para ello 
+ 
+ 
+
+ 
+\end{document}
